@@ -1,0 +1,2 @@
+# cachyos
+Setup para cachyos
