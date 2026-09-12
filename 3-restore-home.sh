@@ -1,20 +1,20 @@
 #!/bin/bash
 set -e
 
-DIR_UBUNTU="/home/fer/workspace/original/home-dirs/ubuntu"
+DIR_CACHYOS="/home/fer/workspace/original/home-dirs/cachyos"
 DESTINO_HOME="$HOME/"
 
 # Verificar que exista el directorio
-if [ ! -d "$DIR_UBUNTU" ]; then
-    echo "Error: No existe el directorio $DIR_UBUNTU"
+if [ ! -d "$DIR_CACHYOS" ]; then
+    echo "Error: No existe el directorio $DIR_CACHYOS"
     exit 1
 fi
 
 echo "=== RESTAURACIÓN DE HOME ==="
-echo "Origen: $DIR_UBUNTU/"
+echo "Origen: $DIR_CACHYOS/"
 echo "Destino: $DESTINO_HOME"
 echo ""
-rsync -av --progress "$DIR_UBUNTU/" "$DESTINO_HOME"
+rsync -av --progress "$DIR_CACHYOS/" "$DESTINO_HOME"
 
 echo "Permisos a .kube y .ssh"
 
@@ -33,7 +33,7 @@ echo "¡Restauración completada con éxito!"
 
 # if [[ "$CONFIRMACION" =~ ^[Ss]$ ]]; then
 #     echo "Restaurando archivos..."
-#     rsync -av --progress "$DIR_UBUNTU/" "$DESTINO_HOME"
+#     rsync -av --progress "$DIR_CACHYOS/" "$DESTINO_HOME"
 #     echo "¡Restauración completada con éxito!"
 # else
 #     echo "Restauración cancelada."

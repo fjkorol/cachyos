@@ -10,7 +10,7 @@ sudo pacman -S --needed --noconfirm  git base-devel && git clone https://aur.arc
 yay -S google-chrome --needed --noconfirm 
 
 
-sudo pacman --noconfirm --needed -S flatpak docker docker-compose docker-buildx telegram-desktop mc gimp meld htop powertop p7zip curl unzip nmap jq ansible vlc geany dbeaver obsidian openssh obs-studio base-devel linux-headers kdiskmark tailscale fisher zoxide fzf links kustomize nodejs nss mkcert yq pyenv postgresql direnv kubectl resources zapzap
+sudo pacman --noconfirm --needed -S flatpak docker docker-compose docker-buildx telegram-desktop mc gimp meld htop powertop p7zip curl unzip nmap jq ansible vlc geany dbeaver obsidian openssh obs-studio base-devel linux-headers kdiskmark tailscale fisher zoxide fzf links kustomize nodejs nss mkcert yq pyenv postgresql direnv kubectl resources libreoffice-fresh libreoffice-fresh-es okular poppler kdegraphics-mobipocket kdegraphics-thumbnailers
 
 
 yay -S --needed --noconfirm  visual-studio-code-bin opera postgresql freelens-bin geekbench google-chrome-beta postman-bin pyenv pyenv-virtualenv lmstudio-bin pgadmin4 komikku vivaldi waterfox-bin zotero-bin xone-dongle-firmware xone-dkms-git arkade pyenv-virtualenv opencode-desktop
