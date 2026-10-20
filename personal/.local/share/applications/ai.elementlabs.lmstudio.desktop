@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=LM Studio
+Type=Application
+Exec=/home/fer/workspace/original/lm-studio/lm-studio %U
+Icon=/home/fer/workspace/original/lm-studio/lm-studio.png
+Terminal=false
+Categories=Utility;
+StartupWMClass=ai.elementlabs.lmstudio
+MimeType=x-scheme-handler/lmstudio;
