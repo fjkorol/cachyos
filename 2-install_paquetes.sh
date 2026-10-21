@@ -10,10 +10,10 @@ sudo pacman -S --needed --noconfirm  git base-devel && git clone https://aur.arc
 yay -S google-chrome --needed --noconfirm 
 
 
-sudo pacman --noconfirm --needed -S flatpak docker docker-compose docker-buildx telegram-desktop mc gimp meld htop powertop p7zip curl unzip nmap jq ansible vlc geany dbeaver obsidian openssh obs-studio base-devel linux-headers kdiskmark tailscale fisher zoxide fzf links kustomize nodejs nss mkcert yq pyenv postgresql direnv kubectl resources libreoffice-fresh libreoffice-fresh-es okular poppler kdegraphics-mobipocket kdegraphics-thumbnailers deluge cpu-x stress
+sudo pacman --noconfirm --needed -S flatpak docker docker-compose docker-buildx telegram-desktop mc gimp meld htop powertop p7zip curl unzip nmap jq ansible vlc geany dbeaver obsidian openssh obs-studio base-devel linux-headers kdiskmark tailscale fisher zoxide fzf links kustomize nodejs nss mkcert yq pyenv postgresql direnv kubectl helm resources libreoffice-fresh libreoffice-fresh-es okular poppler kdegraphics-mobipocket kdegraphics-thumbnailers deluge cpu-x stress
 
 
-yay -S --needed --noconfirm  visual-studio-code-bin opera postgresql freelens-bin geekbench google-chrome-beta postman-bin pyenv pyenv-virtualenv lmstudio-bin komikku vivaldi waterfox-bin zotero-bin xone-dongle-firmware xone-dkms-git arkade pyenv-virtualenv opencode-desktop
+yay -S --needed --noconfirm  visual-studio-code-bin opera postgresql freelens-bin geekbench google-chrome-beta postman-bin pyenv pyenv-virtualenv lmstudio-bin komikku vivaldi waterfox-bin zotero-bin xone-dongle-firmware xone-dkms-git arkade pyenv-virtualenv opencode-desktop tilt-bin antigravity-cli antigravity-ide antigravity gitflow-avh
 
 
 
@@ -92,6 +92,14 @@ kbuildsycoca6
 
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 sudo flatpak install flathub org.pgadmin.pgadmin4
+
+
+echo "==> Configurando repositorios de Helm..."
+helm repo add metallb https://metallb.github.io/metallb
+helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+helm repo add jetstack https://charts.jetstack.io
+helm repo add openebs https://openebs.github.io/charts
+helm repo update
 
 
 
